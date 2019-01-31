@@ -1,0 +1,72 @@
+Command: vcs +v2k -sverilog -R tb.v test3.sv -l test3.out
+                         Chronologic VCS (TM)
+          Version B-2008.12-B-E9 -- Thu Jul 14 17:21:03 2011
+               Copyright (c) 1991-2008 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'tb.v'
+Parsing design file 'test3.sv'
+Parsing included file 'Ordered_Sets.sv'.
+Back to file 'test3.sv'.
+Parsing included file 'Phy.sv'.
+Back to file 'test3.sv'.
+Parsing included file 'States.sv'.
+Back to file 'test3.sv'.
+Parsing included file 'LTSSM.sv'.
+Back to file 'test3.sv'.
+Top Level Modules:
+       tb
+TimeScale is 1 ns / 1 ns
+Starting vcs inline pass...
+3 modules and 0 UDP read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module test because:
+	This module or some inlined child module(s) has/have been modified.
+gcc  -pipe -m32 -O -I/tool/cbar/apps/sim/vcs-2008.12-B-4/include   -c -o rmapats.o \
+rmapats.c
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv -melf_i386 -m32  5NrI_d.o 5NrIB_d.o jUh1_1_d.o Yrj5_1_d.o gzYz_1_d.o \
+rmapats_mop.o rmapats.o SIM_l.o   /tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/libvirsim.a \
+/tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/librterrorinf.so /tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/libsnpsmalloc.so \
+/tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/libvcsnew.so     /tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/ctype-stubs_32.a \
+-ldl -lz  -lc -lm -ldl    
+../simv up to date
+Command: ./simv +v2k -a test3.out
+Chronologic VCS simulator copyright 1991-2008
+Contains Synopsys proprietary information.
+Compiler version B-2008.12-B-E9; Runtime version B-2008.12-B-E9;  Jul 14 17:21 2011
+
+         0::Endpoint0::Detect
+         0::Endpoint1::Detect
+         5::Endpoint1::Polling Active
+         5::Endpoint0::Polling Active
+     10245::Endpoint0::Polling Configuration
+     10245::Endpoint1::Polling Configuration
+     16685::Endpoint0::Configuration LinkLane
+     16685::Endpoint1::Configuration Idle
+     36685::Endpoint1::Configuration Idle Timeout
+     36685::Endpoint0::Configuration LinkLane Timeout
+     36685::Endpoint1::Detect
+     36685::Endpoint0::Detect
+     36695::Endpoint0::Polling Active
+     36695::Endpoint1::Polling Active
+     46935::Endpoint1::Polling Configuration
+     46935::Endpoint0::Polling Configuration
+     49995::Link up Failed => wrong Nextstate transition,Fixing..
+     53375::Endpoint1::Configuration LinkLane
+     53375::Endpoint0::Configuration LinkLane
+     54075::Endpoint0::Configuration Complete
+     54075::Endpoint1::Configuration Complete
+     54235::Endpoint1::Configuration Idle
+     54235::Endpoint0::Configuration Idle
+     54395::Endpoint1::L0 , Link up
+$finish called from file "test3.sv", line 71.
+$finish at simulation time                54395
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 54395 ns
+CPU Time:      0.040 seconds;       Data structure size:   0.0Mb
+Thu Jul 14 17:21:11 2011

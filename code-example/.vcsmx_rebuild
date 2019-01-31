@@ -1,0 +1,1 @@
+vcs "+v2k" "-sverilog" "-R" "tb.v" "test4.sv" "-l" "test4.out"

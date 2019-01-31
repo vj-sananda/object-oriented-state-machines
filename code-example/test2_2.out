@@ -1,0 +1,222 @@
+Command: vcs +v2k -sverilog -R tb.v test2_2.sv -l test2_2.out
+                         Chronologic VCS (TM)
+          Version B-2008.12-B-E9 -- Thu Jul 14 17:20:54 2011
+               Copyright (c) 1991-2008 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'tb.v'
+Parsing design file 'test2_2.sv'
+Parsing included file 'Ordered_Sets.sv'.
+Back to file 'test2_2.sv'.
+Parsing included file 'Phy.sv'.
+Back to file 'test2_2.sv'.
+Parsing included file 'States.sv'.
+Back to file 'test2_2.sv'.
+Parsing included file 'LTSSM.sv'.
+Back to file 'test2_2.sv'.
+Top Level Modules:
+       tb
+TimeScale is 1 ns / 1 ns
+Starting vcs inline pass...
+3 modules and 0 UDP read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module test because:
+	This module or some inlined child module(s) has/have been modified.
+gcc  -pipe -m32 -O -I/tool/cbar/apps/sim/vcs-2008.12-B-4/include   -c -o rmapats.o \
+rmapats.c
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv -melf_i386 -m32  5NrI_d.o 5NrIB_d.o jUh1_1_d.o Yrj5_1_d.o gzYz_1_d.o \
+rmapats_mop.o rmapats.o SIM_l.o   /tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/libvirsim.a \
+/tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/librterrorinf.so /tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/libsnpsmalloc.so \
+/tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/libvcsnew.so     /tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/ctype-stubs_32.a \
+-ldl -lz  -lc -lm -ldl    
+../simv up to date
+Command: ./simv +v2k -a test2_2.out
+Chronologic VCS simulator copyright 1991-2008
+Contains Synopsys proprietary information.
+Compiler version B-2008.12-B-E9; Runtime version B-2008.12-B-E9;  Jul 14 17:21 2011
+
+         0::Endpoint0::Detect
+         0::Endpoint1::Detect
+         5::Endpoint1::Polling Active
+         5::Endpoint0::Polling Active
+        85::Endpoint1::Polling Configuration
+     20005::Endpoint0::Polling Active Timeout
+     20005::Endpoint0::Detect
+     20015::Endpoint0::Polling Active
+     20085::Endpoint1::Polling Configuration Timeout
+     20085::Endpoint1::Detect
+     20095::Endpoint1::Polling Active
+     20175::Endpoint1::Polling Configuration
+     40015::Endpoint0::Polling Active Timeout
+     40015::Endpoint0::Detect
+     40025::Endpoint0::Polling Active
+     40175::Endpoint1::Polling Configuration Timeout
+     40175::Endpoint1::Detect
+     40185::Endpoint1::Polling Active
+     40265::Endpoint1::Polling Configuration
+     60025::Endpoint0::Polling Active Timeout
+     60025::Endpoint0::Detect
+     60035::Endpoint0::Polling Active
+     60265::Endpoint1::Polling Configuration Timeout
+     60265::Endpoint1::Detect
+     60275::Endpoint1::Polling Active
+     60355::Endpoint1::Polling Configuration
+     80035::Endpoint0::Polling Active Timeout
+     80035::Endpoint0::Detect
+     80045::Endpoint0::Polling Active
+     80355::Endpoint1::Polling Configuration Timeout
+     80355::Endpoint1::Detect
+     80365::Endpoint1::Polling Active
+     80445::Endpoint1::Polling Configuration
+    100045::Endpoint0::Polling Active Timeout
+    100045::Endpoint0::Detect
+    100055::Endpoint0::Polling Active
+    100445::Endpoint1::Polling Configuration Timeout
+    100445::Endpoint1::Detect
+    100455::Endpoint1::Polling Active
+    100535::Endpoint1::Polling Configuration
+    120055::Endpoint0::Polling Active Timeout
+    120055::Endpoint0::Detect
+    120065::Endpoint0::Polling Active
+    120535::Endpoint1::Polling Configuration Timeout
+    120535::Endpoint1::Detect
+    120545::Endpoint1::Polling Active
+    120625::Endpoint1::Polling Configuration
+    140065::Endpoint0::Polling Active Timeout
+    140065::Endpoint0::Detect
+    140075::Endpoint0::Polling Active
+    140625::Endpoint1::Polling Configuration Timeout
+    140625::Endpoint1::Detect
+    140635::Endpoint1::Polling Active
+    140715::Endpoint1::Polling Configuration
+    160075::Endpoint0::Polling Active Timeout
+    160075::Endpoint0::Detect
+    160085::Endpoint0::Polling Active
+    160715::Endpoint1::Polling Configuration Timeout
+    160715::Endpoint1::Detect
+    160725::Endpoint1::Polling Active
+    160805::Endpoint1::Polling Configuration
+    180085::Endpoint0::Polling Active Timeout
+    180085::Endpoint0::Detect
+    180095::Endpoint0::Polling Active
+    180805::Endpoint1::Polling Configuration Timeout
+    180805::Endpoint1::Detect
+    180815::Endpoint1::Polling Active
+    180895::Endpoint1::Polling Configuration
+    200095::Endpoint0::Polling Active Timeout
+    200095::Endpoint0::Detect
+    200105::Endpoint0::Polling Active
+    200895::Endpoint1::Polling Configuration Timeout
+    200895::Endpoint1::Detect
+    200905::Endpoint1::Polling Active
+    200985::Endpoint1::Polling Configuration
+    220105::Endpoint0::Polling Active Timeout
+    220105::Endpoint0::Detect
+    220115::Endpoint0::Polling Active
+    220985::Endpoint1::Polling Configuration Timeout
+    220985::Endpoint1::Detect
+    220995::Endpoint1::Polling Active
+    221075::Endpoint1::Polling Configuration
+    240115::Endpoint0::Polling Active Timeout
+    240115::Endpoint0::Detect
+    240125::Endpoint0::Polling Active
+    241075::Endpoint1::Polling Configuration Timeout
+    241075::Endpoint1::Detect
+    241085::Endpoint1::Polling Active
+    241165::Endpoint1::Polling Configuration
+    260125::Endpoint0::Polling Active Timeout
+    260125::Endpoint0::Detect
+    260135::Endpoint0::Polling Active
+    261165::Endpoint1::Polling Configuration Timeout
+    261165::Endpoint1::Detect
+    261175::Endpoint1::Polling Active
+    261255::Endpoint1::Polling Configuration
+    280135::Endpoint0::Polling Active Timeout
+    280135::Endpoint0::Detect
+    280145::Endpoint0::Polling Active
+    281255::Endpoint1::Polling Configuration Timeout
+    281255::Endpoint1::Detect
+    281265::Endpoint1::Polling Active
+    281345::Endpoint1::Polling Configuration
+    300145::Endpoint0::Polling Active Timeout
+    300145::Endpoint0::Detect
+    300155::Endpoint0::Polling Active
+    301345::Endpoint1::Polling Configuration Timeout
+    301345::Endpoint1::Detect
+    301355::Endpoint1::Polling Active
+    301435::Endpoint1::Polling Configuration
+    320155::Endpoint0::Polling Active Timeout
+    320155::Endpoint0::Detect
+    320165::Endpoint0::Polling Active
+    321435::Endpoint1::Polling Configuration Timeout
+    321435::Endpoint1::Detect
+    321445::Endpoint1::Polling Active
+    321525::Endpoint1::Polling Configuration
+    340165::Endpoint0::Polling Active Timeout
+    340165::Endpoint0::Detect
+    340175::Endpoint0::Polling Active
+    341525::Endpoint1::Polling Configuration Timeout
+    341525::Endpoint1::Detect
+    341535::Endpoint1::Polling Active
+    341615::Endpoint1::Polling Configuration
+    360175::Endpoint0::Polling Active Timeout
+    360175::Endpoint0::Detect
+    360185::Endpoint0::Polling Active
+    361615::Endpoint1::Polling Configuration Timeout
+    361615::Endpoint1::Detect
+    361625::Endpoint1::Polling Active
+    361705::Endpoint1::Polling Configuration
+    380185::Endpoint0::Polling Active Timeout
+    380185::Endpoint0::Detect
+    380195::Endpoint0::Polling Active
+    381705::Endpoint1::Polling Configuration Timeout
+    381705::Endpoint1::Detect
+    381715::Endpoint1::Polling Active
+    381795::Endpoint1::Polling Configuration
+    400195::Endpoint0::Polling Active Timeout
+    400195::Endpoint0::Detect
+    400205::Endpoint0::Polling Active
+    401795::Endpoint1::Polling Configuration Timeout
+    401795::Endpoint1::Detect
+    401805::Endpoint1::Polling Active
+    401885::Endpoint1::Polling Configuration
+    420205::Endpoint0::Polling Active Timeout
+    420205::Endpoint0::Detect
+    420215::Endpoint0::Polling Active
+    421885::Endpoint1::Polling Configuration Timeout
+    421885::Endpoint1::Detect
+    421895::Endpoint1::Polling Active
+    421975::Endpoint1::Polling Configuration
+    440215::Endpoint0::Polling Active Timeout
+    440215::Endpoint0::Detect
+    440225::Endpoint0::Polling Active
+    441975::Endpoint1::Polling Configuration Timeout
+    441975::Endpoint1::Detect
+    441985::Endpoint1::Polling Active
+    442065::Endpoint1::Polling Configuration
+    460225::Endpoint0::Polling Active Timeout
+    460225::Endpoint0::Detect
+    460235::Endpoint0::Polling Active
+    462065::Endpoint1::Polling Configuration Timeout
+    462065::Endpoint1::Detect
+    462075::Endpoint1::Polling Active
+    462155::Endpoint1::Polling Configuration
+    480235::Endpoint0::Polling Active Timeout
+    480235::Endpoint0::Detect
+    480245::Endpoint0::Polling Active
+    482155::Endpoint1::Polling Configuration Timeout
+    482155::Endpoint1::Detect
+    482165::Endpoint1::Polling Active
+    482245::Endpoint1::Polling Configuration
+    499995::ERROR:Link Failed to come up
+$finish called from file "test2_2.sv", line 52.
+$finish at simulation time               499995
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 499995 ns
+CPU Time:      0.110 seconds;       Data structure size:   0.0Mb
+Thu Jul 14 17:21:02 2011

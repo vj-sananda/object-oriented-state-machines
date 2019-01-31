@@ -1,0 +1,18 @@
+Command: vcs +v2k -sverilog -R tb.v .sv -l .out
+                         Chronologic VCS (TM)
+          Version B-2008.12-B-E9 -- Thu Jul 14 12:36:32 2011
+               Copyright (c) 1991-2008 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'tb.v'
+
+Error-[SFCOR] Source file cannot be opened
+  Source file ".sv" cannot be opened for reading.
+  Please check whether the file exists and with proper permissions.
+  "tb.v", 15
+
+1 error

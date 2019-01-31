@@ -1,0 +1,28 @@
+Command: vcs +v2k -sverilog -R tb.v test2_1.sv -l test2_1.out
+                         Chronologic VCS (TM)
+          Version B-2008.12-B-E9 -- Fri Jul 15 16:46:39 2011
+               Copyright (c) 1991-2008 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'tb.v'
+Parsing design file 'test2_1.sv'
+Parsing included file 'Ordered_Sets.sv'.
+Back to file 'test2_1.sv'.
+Parsing included file 'Phy.sv'.
+Back to file 'test2_1.sv'.
+Parsing included file 'States.sv'.
+Back to file 'test2_1.sv'.
+Parsing included file 'LTSSM.sv'.
+Back to file 'test2_1.sv'.
+
+Error-[SE] Syntax error
+  Following verilog source has syntax error :
+  "test2_1.sv", 16: token is 'rand'
+  rand int TransmitCnt ;
+      ^
+
+1 error

@@ -1,0 +1,63 @@
+Command: vcs +v2k -sverilog -R tb.v test2_3.sv -l test2_3.out
+                         Chronologic VCS (TM)
+          Version B-2008.12-B-E9 -- Fri Jul 15 17:24:04 2011
+               Copyright (c) 1991-2008 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'tb.v'
+Parsing design file 'test2_3.sv'
+Parsing included file 'Ordered_Sets.sv'.
+Back to file 'test2_3.sv'.
+Parsing included file 'Phy.sv'.
+Back to file 'test2_3.sv'.
+Parsing included file 'States.sv'.
+Back to file 'test2_3.sv'.
+Parsing included file 'LTSSM.sv'.
+Back to file 'test2_3.sv'.
+Top Level Modules:
+       tb
+TimeScale is 1 ns / 1 ns
+Starting vcs inline pass...
+3 modules and 0 UDP read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module test because:
+	This module or some inlined child module(s) has/have been modified.
+gcc  -pipe -m32 -O -I/tool/cbar/apps/sim/vcs-2008.12-B-4/include   -c -o rmapats.o \
+rmapats.c
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv -melf_i386 -m32  5NrI_d.o 5NrIB_d.o jUh1_1_d.o Yrj5_1_d.o gzYz_1_d.o \
+rmapats_mop.o rmapats.o SIM_l.o   /tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/libvirsim.a \
+/tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/librterrorinf.so /tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/libsnpsmalloc.so \
+/tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/libvcsnew.so     /tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/ctype-stubs_32.a \
+-ldl -lz  -lc -lm -ldl    
+../simv up to date
+Command: ./simv +v2k -a test2_3.out
+Chronologic VCS simulator copyright 1991-2008
+Contains Synopsys proprietary information.
+Compiler version B-2008.12-B-E9; Runtime version B-2008.12-B-E9;  Jul 15 17:24 2011
+
+model.PollingActive.TransmitCnt =          15
+         0::Endpoint0::Detect
+         0::Endpoint1::Detect
+         5::Endpoint1::Polling Active
+         5::Endpoint0::Polling Active
+       155::Endpoint1::Polling Configuration
+     10245::Endpoint0::Polling Configuration
+     11605::Endpoint0::Configuration LinkLane
+     11635::Endpoint1::Configuration LinkLane
+     12285::Endpoint0::Configuration Complete
+     12315::Endpoint1::Configuration Complete
+     12445::Endpoint0::Configuration Idle
+     12475::Endpoint1::Configuration Idle
+     12605::Endpoint0::L0
+     12635::Endpoint1::L0 , Link up
+$finish called from file "test2_3.sv", line 56.
+$finish at simulation time                12635
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 12635 ns
+CPU Time:      0.030 seconds;       Data structure size:   0.0Mb
+Fri Jul 15 17:24:14 2011
